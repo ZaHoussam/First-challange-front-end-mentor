@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    align-items: center;
+    padding: 20px;
+}
+
+.container .card {
+    padding: 15px 30px;
+
+}
+
+.container .card:first-child {
+    background-color: #e28525;
+}
+
+.container .card:nth-child(2) {
+    background-color: #016972;
+}
+
+.container .card:last-child {
+    background-color: #00403f;
+}
+
+.container .logo {
+    margin: 25px 20px 0;
+}
+
+.container .text {
+    padding: 17px;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.container p {
+    color: rgb(229 229 229 / 75%);
+    margin-bottom: 20px;
+}
+
+.container a {
+    text-decoration: none;
+    padding: 8px 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: 1px solid rgb(229 229 229 / 75%);
+    text-transform: capitalize;
+    font-size: 17px;
+    display: block;
+    width: fit-content;
+    color: rgb(229 229 229 / 75%);
+    font-weight: 600;
+    letter-spacing: .5px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    margin-left: 10px;
+}
+
+.container a:hover {
+    color: #fff;
+    border-color: #fff;
+}
